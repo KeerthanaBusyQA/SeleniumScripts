@@ -1,0 +1,13 @@
+package mypackage;
+
+public class MyArrays {
+	public static void main(String args[]) {
+		
+		//Type of array declarations
+		int[] arr;   
+		int []array;  
+		int arrayy[];
+		int[] s =new int[10];
+	}
+	
+}

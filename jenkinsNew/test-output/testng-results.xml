@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="7194" started-at="2018-09-08T00:35:13Z" finished-at="2018-09-08T00:35:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="7194" started-at="2018-09-08T00:35:13Z" finished-at="2018-09-08T00:35:20Z">
+      <class name="packageNew.Slider">
+        <test-method status="PASS" signature="xtraSlider()[pri:0, instance:packageNew.Slider@685cb137]" name="xtraSlider" duration-ms="7175" started-at="2018-09-08T00:35:13Z" finished-at="2018-09-08T00:35:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xtraSlider -->
+      </class> <!-- packageNew.Slider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

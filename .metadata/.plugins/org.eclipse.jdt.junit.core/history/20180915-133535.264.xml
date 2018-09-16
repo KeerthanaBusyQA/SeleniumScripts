@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="cucumberSelenium" tests="3" started="3" failures="0" errors="0" ignored="2">
+  <testsuite name="testRunner.Runner" time="0.004">
+    <testsuite name="Feature: Authentication functionality on login page of Application" time="0.004">
+      <testsuite name="Scenario: Verification of login button" time="0.004" incomplete="true">
+        <skipped/>
+        <testcase name="Given Open the Firefox and launch the application" classname="Scenario: Verification of login button" time="0.003"/>
+        <testcase name="When Enter the &lt;Username&gt; and &lt;Password&gt;" classname="Scenario: Verification of login button" time="0.0" ignored="true"/>
+        <testcase name="Then login with credential successfully" classname="Scenario: Verification of login button" time="0.001" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

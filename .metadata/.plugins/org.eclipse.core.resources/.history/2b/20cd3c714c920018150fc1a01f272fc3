@@ -1,0 +1,17 @@
+package mypackage;
+
+public class ControlStmt {
+	public static void main(String args[]) 
+	{
+	//if loop
+	int a, b; 
+	a=1;
+	b=4;
+	if(a < b) 
+		a = 0; 
+	else b = 0;
+	System.out.println("a="+a+" b="+b);
+	
+	//class assignment - Find greatest in 3 digits
+	}
+}

@@ -1,0 +1,12 @@
+package Tester;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class First {
+public static void main(char args[]) {
+	System.setProperty("webdriver.gecko.driver", "C:\\your_location\\geckodriver.exe");
+	WebDriver driver = new Firefoxdriver();
+}
+}

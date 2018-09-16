@@ -1,0 +1,22 @@
+package MouseClicks.Hover;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class MouseClicks {
+
+	public static void main(String[] args) {
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://www.americangolf.co.uk");
+		//          .//*[@id='header-navigation']/div[1]/ul/li[1]/a
+		Actions act = new Actions(driver);
+		WebElement W1 = driver.findElement(By.xpath(".//*[@id='header-navigation']/div[1]/ul/li[1]/a"));
+		
+		act.moveToElement(W1);
+	}
+	
+	
+}

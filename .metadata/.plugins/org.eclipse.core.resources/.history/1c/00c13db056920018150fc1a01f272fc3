@@ -1,0 +1,23 @@
+package mypackage;
+
+public class MyArrays {
+	public static void main(String args[]) {
+		
+		//Type of array declarations
+		int[] arr;   
+		int []array;  
+		int arrayy[];
+		int[] s =new int[10];
+		
+		 int month_days[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };     
+		 System.out.println("April has " + month_days[3] + " days."); 
+		 
+		 double nums[] = {10.1, 11.2, 12.3, 13.4, 14.5};
+		 double result = 0;     
+		 int i; 
+		 for(i=0; i<nums.length; i++)       
+			 result = result + nums[i];     
+		 System.out.println("Average is " + result / nums.length); 
+	}
+	
+}

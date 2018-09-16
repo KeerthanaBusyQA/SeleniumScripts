@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="cucumberSelenium" tests="1" started="0" failures="0" errors="0" ignored="0">
+  <testsuite name="testRunner.Runner" incomplete="true">
+    <testsuite name="Feature: Authentication functionality on login page of Application" incomplete="true">
+      <testcase name="Scenario Outline: Verification of login button" classname="Scenario Outline: Verification of login button" incomplete="true"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,49 @@
+package com.selenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Calendar {
+	@Test
+	public void xtra() {
+	System.setProperty("webdriver.chrome.driver", "E:\\Softwares\\Drivers\\ChromeDriver\\chromedriver.exe");
+	WebDriver driver = new ChromeDriver();
+	
+	driver.manage().window().maximize();
+	driver.manage().deleteAllCookies();
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
+	//Launching URL
+	driver.get("https://demoqa.com/datepicker/");
+	driver.findElement(By.cssSelector("#ui-id-1")).click();
+	driver.findElement(By.cssSelector("#datepicker1")).click();
+	String ReqdYear = "2019";
+	String ReqdMonth = "February";
+	driver.findElement(By.cssSelector(".ui-datepicker-year"));
+	driver.findElement(By.cssSelector(".ui-datepicker-month"));
+	String ReqdDate = "4";
+	
+	
+	while(!(driver.findElement(By.cssSelector(".ui-datepicker-year")).getText().equalsIgnoreCase(ReqdYear))) 
+	{
+	driver.findElement(By.cssSelector(".ui-datepicker-next.ui-corner-all")).click();
+	}
+	
+	for(int i=0;i<12;i--) {
+		if(driver.findElement(By.cssSelector(".ui-datepicker-month")).getText().equalsIgnoreCase(ReqdMonth)) {
+			String xpathReqdDate = "//*[text()=\""+ReqdDate+"\"]";
+			System.out.println(xpathReqdDate);
+			driver.findElement(By.xpath(xpathReqdDate)).click();
+		break;
+		}
+		else
+			driver.findElement(By.cssSelector(".ui-datepicker-next.ui-corner-all")).click();
+	
+	}
+	
+	}
+}
